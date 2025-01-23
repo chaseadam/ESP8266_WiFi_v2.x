@@ -5,8 +5,9 @@ This is the Web UI for OpenEVSE WiFi module. It is intended to be served via the
 ## Building the UI
 
 ```shell
+git submodule update --init
 npm install
-npm run build
+NODE_OPTIONS=--openssl-legacy-provider npm run build
 ```
 
 ## Dev server
